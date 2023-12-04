@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic attribute</title>
+    <style>
+        .hidden {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        div,
+        #feature {
+            width: 500px;
+            height: 350px;
+        }
+
+
+
+        div {
+            margin: 0 auto;
+        }
+
+        #feature {
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        #title {
+            font-family: 'Khmer OS Moul Light';
+            background: greenyellow;
+            display: block;
+            width: 504px;
+            margin: 10px 0 0 -2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="hidden" src="../media/RUPP2.jpg" alt="">
+        <img class="hidden" src="../media/RUPP3.jpg" alt="">
+        <img class="hidden" src="../media/RUPP4.jpg" alt="">
+        <img id="hidden" src="../media/RUPP5.jpg" alt="">
+        <img id="feature" src="../media/RUPP1.jpg" alt="">
+    </div>
+    <script type="text/javascript">
+        var feature = document.getElementById("feature");
+        var title = document.getElementById("title");
+        var i = 0;
+        function slide() {
+            feature.src = "../media/RUPP" + ++i + ".jpg";
+            if (i == 5)
+                i = 0
+        }
+        window.setInterval(slide, 5000);
+
+    </script>
+
+</body>
+
+</html>

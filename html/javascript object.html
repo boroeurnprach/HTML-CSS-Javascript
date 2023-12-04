@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript object</title>
+</head>
+
+<body>
+    <script type="text/Javascript">
+        document.write(Math.floor(Math.random()*5));
+        /*write ជា method សម្រាប់សរសេរអត្ដបទនៅក្នុងវេបផេក។ */
+        /*
+        របៀបទី១ [min, max[
+            Math.floor(Math.random()*(max-min)+min)
+            របៀបទី២ [min, max]
+            Math.floor(Math.random()*(max-min+1)+1)
+        ]]
+
+        window object ជាវត្ថុប្រើប្រាស់អាចឲ្យ javascript ប្រើមុខងារនានា នៃ tab របស់ browser ដូចជា អាចកំណត់កិច្ចការដំណើរការ
+        លុបចោលនៅពេលដែលកិច្ចការត្រូវដំណើរការ។ល។
+
+        setInterval (កិច្ចការ, ពេលគិតជាមីលីវិនាទី)ជា method មានមុខងារធ្វើឲ្យ
+         កិច្ចការ(function)ដំណើរការសារចុះសារឡើងមិនកំណត់ចំនួនដងឲ្យតែដល់ពេលវេលាជាមីលីវិនាទីបានបញ្ជាក់។
+
+        clearInternal (អាយឌីសម្គាល់ដំណើរការ) លុបចោលពេលធ្វើកិច្ចការដំណើរការបានកំណត់ដោយ setInterval។
+        */
+
+        /*
+        ប្រើ event របស់ object 
+
+         របៀបទី១
+            ធាតុបានជ្រើស addEventListener ("ឈ្មោះevent", ឈ្មោះfunction);
+
+        របៀបទី២
+
+            ធាតុបានជ្រើសរើស, onឈ្មោះevent = ឈ្មោះfunction;
+            ឈ្មោះeventប្រើប្រាស់ញឹកញាប់មាន click, change, focus, blur ។ល។
+        */
+    </script>
+</body>
+
+</html>

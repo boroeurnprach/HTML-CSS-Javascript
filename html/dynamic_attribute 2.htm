@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic attribute</title>
+    <style>
+        .hidden {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        div,
+        #feature {
+            width: 500px;
+            height: 350px;
+        }
+
+
+
+        div {
+            margin: 0 auto;
+        }
+
+        #feature {
+            border-radius: 8px;
+            border: 1px solid lightgray;
+        }
+
+        #title {
+            font-family: 'Khmer OS Moul Light';
+            background: greenyellow;
+            display: block;
+            width: 504px;
+            margin: 10px 0 0 -2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="hidden" src="../media/ceremoy hall.jpg" alt="">
+        <img class="hidden" src="../media/IFL.jpg" alt="">
+        <img class="hidden" src="../media/CJCC.jpg" alt="">
+        <img id="hidden" src="../media/CKCC.jpg" alt="">
+        <img id="feature" src="../media/building a.jpg" alt="">
+        <span id="title">អគារអេ</span>
+    </div>
+    <script type="text/javascript">
+        var slides = [
+            [
+                "../media/building a.jpg", "អាគារអេ"
+            ],
+            [
+                "../media/ceremony hall.jpg", "សាលាបុណ្យ"
+            ],
+            [
+                "../media/"
+            ]
+        ]
+        var feature = document.getElementById("feature");
+        var title = document.getElementById("title");
+        var i = 0;
+        function slide() {
+            feature.src = "../media/RUPP" + ++i + ".jpg";
+            if (i == 5)
+                i = 0
+        }
+        window.setInterval(slide, 1000);
+         /*
+        បង្កើតអឺរ៉េពីរវិមាត្រ(តារាង)ជួរុលទី១ផ្ទុកអាសយដ្ឋានរូបភាព ឯជួរឈរទី២ផ្ទុកចំណងជើងរូបភាព។
+        ចំណាំ វិមាត្រទី១គឺជួរដេកនិងវិមាត្រទី២គឺជួរឈរ
+    */
+
+    </script>
+   
+
+</body>
+
+</html>
